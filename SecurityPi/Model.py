@@ -1,8 +1,10 @@
 #!/usr/bin/env python2.7
 
+import logging
 import RPi.GPIO as GPIO
 import redis
-import logging
+import sys
+
 
 
 """
@@ -52,7 +54,7 @@ class Model(object):
     def __setstate(self, val=False):
         #State in this model is true/false
         if self.last is not bool(val):
-            logging.info('Updating redis key %s to %s with last value %s' % (self.key,bool(val),self.last))
+            log.info('Updating redis key %s to %s with last value %s' % (self.key,bool(val),self.last))
             self.db.set(self.key, val)
             self.last = val
             self.db.expire(self.key, 60)
@@ -106,3 +108,5 @@ class House(object):
         for doorname in self.doors.keys():
             self.doors[doorname].poll()
 
+if __name__ == "__main__":
+    sys.exit(-1)
