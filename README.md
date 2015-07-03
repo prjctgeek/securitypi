@@ -30,7 +30,7 @@ Root/fixing the permissions on /proc/mem is required for GPIO access.
 
 ## Flask api
 
-#### To starting:
+#### To start:
 
     ./SecurityPi/api.py &
 
