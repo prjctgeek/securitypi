@@ -3,7 +3,7 @@
 
 Prototype of event generation code for rasberry pi attached to my home security system wiring.  I used a prototype board to hook up some normally closed magnet switches to +5v and the GPIO pins of the 'Pi.
 
-My goal was to start with events on the IFTTT App, then work towards more event based actions next, with either a local redis or a cloud based IoT service.
+My goal was to get door open events to my phone as a starting point, then work towards more event based actions next, with either a local redis or a cloud based IoT service, like IFTTT.
 
 
 ### Installation
