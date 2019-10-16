@@ -13,7 +13,7 @@ Requires a running local redis and a working GPIO connection to at least one sen
 """
 
 __author__ = 'Doug Chapman <prjctgeek@gmail.com'
-__version__ = '0.1'
+__version__ = '0.2'
 
 import logging
 import time
