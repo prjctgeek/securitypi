@@ -1,5 +1,5 @@
 RPi.GPIO==0.5.11
 argparse==1.2.1
-redis==2.4.13
+redis==4.5.3
 flask>=1.0.0
 requests==2.20.0
